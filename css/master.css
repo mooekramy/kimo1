@@ -1,0 +1,224 @@
+  
+* { 
+   box-sizing: border-box;
+}
+
+  div { 
+   border-bottom: 10px solid wheat;
+}
+
+
+h1 {
+   background-color: red;
+   color: white;
+   text-align: center;
+   font-weight: bold;
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-size: 80px;
+   scroll-behavior: smooth;
+   align-items: center;
+   border-bottom: 40px;
+   border-bottom: #eee;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+h1:hover {
+   background-color: black;
+}
+h2 {
+   font-size: 80px;
+   margin-top: 0px;
+   text-align: center;
+   background-color: black;
+   color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin-bottom:4px;
+}
+h2:hover{
+   background-color: red;
+}
+input { 
+   font-size: 30px;
+   outline: none;
+   margin-top: 0px;
+}
+p { 
+   text-align: left;
+   font-size:30px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+}
+img { 
+  margin-left: 432px;
+  margin-top: 40px;
+  transition: 0.3s;
+  filter: grayscale(100%);
+  transform-style: preserve-3d;
+}
+img:hover {
+   filter: grayscale(0);
+   transform: scale(1) rotate(-3deg) ;
+
+}
+figcaption{ 
+   font-size: 50px;
+   margin-top: 30px;
+   text-align: center;
+   margin-left: -10px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   filter: blur(8px);
+   transition: 0.3s;
+}
+figcaption:hover {
+   filter: blur(0);
+   transform: scale(1.2) rotate(8deg) ;
+}
+::selection { color: yellow;
+   background-color: black;
+}
+footer {
+   font-size: 50px;
+   text-align: center;
+   background-color: aqua;
+   grid-area: footrer  ;
+   width:  60px;
+   height: 60px;
+}
+h2 {
+   color: white;
+   position: relative;
+   margin: 20px auto;
+   width: fit-content;
+   padding: 20px;
+   transform: skew(1.2);
+   font-size: 40px; 
+   
+}
+h2:before {
+   content:"" ;
+   position: absolute;
+   left: 0;
+   top: 0;
+   background-color: red;
+width: 100%;
+height: 100%;
+z-index: -1;   
+transform: skew(20deg);
+}
+h2:before :hover {
+   background-color:green ;
+   transform: rotate(3deg);
+}
+.moo{ 
+   font-size: 400px;
+   margin-left: 540px;
+   filter:opacity(2%) ;
+   margin-top: -330px;
+   
+} 
+.moo:hover { 
+   
+   filter: opacity(100%);
+   color: red;
+} 
+.tom { 
+   margin-left: 200px;
+}
+
+   .too{ 
+      margin-left: -150px;
+      filter: brightness(59px);
+      color: blue;
+      
+   }
+   .too:hover { 
+      transform: translateX( 180px);
+      transition: 0.9s;
+      filter: blur(0px);
+   }
+
+    /* transform : تمدد العنصر افقى او رأسى   */
+
+  
+
+
+
+   * { 
+   box-sizing: border-box;
+   margin: 0;
+  } */
+   body{
+   font-family:Arial, Helvetica, sans-serif ;
+  } 
+  /* .container{
+   perspective: 900px;
+  } 
+   .box { 
+      position: relative;
+      width:200px ;
+      height:200px ;
+      transform-style: preserve-3d;
+      transition: transform 1s;
+    margin-left: 60px;  
+    margin-top: 30px;
+   transform-origin: right center;
+   }
+   .box:hover {
+      transform: rotateY(-180deg) ;
+      transform: translate(100%) rotateY(100deg );
+   }
+   .box .face {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      font-size: 30px;
+      color: white;
+      backface-visibility: hidden;
+   }
+ .box .front {
+   background-color: red;
+ }
+ .box .back {
+   background-color: green;
+   transform: rotateY(180deg);
+ }
+     */
+    div { 
+      width: 100px;
+      height: 100px;
+      background-color: #eee;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -50px;
+      margin-top: 530px;
+      border-radius: 50%;
+      border: 5px solid red;
+      border-left-color:transparent ;
+      animation-name: spin;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease;
+    }
+    div:hover { 
+      background-color: #434343;
+      color: aqua;
+      transition: 1s;
+      transform-origin: right;
+      transform-style: preserve-3d; 
+    }
+    @keyframes spin{ 
+      0% 
+     {
+      transform: rotate(0deg);
+     } 
+     100% 
+     { 
+      transform: rotate(360deg);
+     }
+    }
+ 
